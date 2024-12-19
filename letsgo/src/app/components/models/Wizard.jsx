@@ -9,7 +9,7 @@ const Wizard = React.memo(function Wizard(props) {
   const { nodes, materials } = useGLTF("/models/wizard-transformed.glb");
 
   const modelRef = useRef();
-
+  //useFrame hook for executing code every frame
   useFrame((state) => {
     modelRef.current.position.y =
       -1.5 + Math.sin(state.clock.elapsedTime) * 0.15;
