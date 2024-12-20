@@ -12,7 +12,7 @@ const Wizard = React.memo(function Wizard(props) {
   //useFrame hook for executing code every frame
   useFrame((state) => {
     modelRef.current.position.y =
-      -1.5 + Math.sin(state.clock.elapsedTime) * 0.15;
+      -1.5 + Math.sin(state.clock.elapsedTime) * 0.15;//multiplying the valuse with 0.15 to reduce the up and down range of the 3d animation
   });
 
   return (
