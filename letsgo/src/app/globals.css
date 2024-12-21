@@ -17,3 +17,19 @@
     animation-play-state: paused;
   }
 }
+
+
+@keyframes move {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-50px) translateX(50px);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-100px) translateX(-50px);
+    opacity: 0.5;
+  }
+}
