@@ -1,13 +1,26 @@
 "use client"
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
+import { useFrame } from '@react-three/fiber'
 
 export default function Staff(props) {
   const { nodes, materials } = useGLTF('/models/staff-transformed.glb')
+
+  const modelRef = useRef();
+
+  useFrame(() =>{
+    if(modelRef.current){
+        modelRef.current.rotation.y += 0.009
+    }
+  });
+
   return (
-    <group {...props} dispose={null}
-    scale={[2.5, 2.3, 2.2]}>
-        position={[0, -1, 0]}
+    <group {...props} 
+    ref={modelRef}
+    dispose={null}
+    scale={[3, 2.8, 3]}
+    position={[0, -1, 0]}>
+        
       <mesh
         castShadow
         receiveShadow

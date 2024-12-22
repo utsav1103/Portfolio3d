@@ -24,7 +24,7 @@ export default function Home() {
 
       <div className="fless items-center justify-center w-[20%] fixed top-20 left-0 h-full">
       <RenderModel>
-        <Staff />
+        <Staff/>
       </RenderModel>
       </div>
     </main>
