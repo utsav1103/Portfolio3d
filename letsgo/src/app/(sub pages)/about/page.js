@@ -3,6 +3,7 @@ import Image from "next/image";
 import bg from "../../../../public/background/about-background.png";
 import RenderModel from "@/app/components/RenderModel";
 import HatModel from "@/app/components/models/HatModel";
+import AboutDetails from "@/app/components/about";
 
 
  
@@ -31,7 +32,7 @@ export default function Home() {
       </div>
       </div>
 
-
+      <AboutDetails />
 
     </>
   );
