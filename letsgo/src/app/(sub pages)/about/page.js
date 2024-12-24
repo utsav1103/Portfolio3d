@@ -18,7 +18,7 @@ export default function Home() {
 
       
 
-      <div className="fless items-center justify-center w-[20%] fixed top-20 left-0 h-full">
+      <div className="w-full h-screen absolute top-1/2 left-0 -translate-y-1/2">
       <RenderModel>
         <HatModel/>
       </RenderModel>

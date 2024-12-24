@@ -22,7 +22,7 @@ export default function Home() {
       <ProjectList projects={projectsData} /> 
       </div>
 
-      <div className="fless items-center justify-center w-[20%] fixed top-20 left-0 h-full">
+      <div className="flex items-center justify-center w-[20%] fixed top-20 left-0 h-full">
       <RenderModel>
         <Staff/>
       </RenderModel>
