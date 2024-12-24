@@ -14,7 +14,7 @@ const HomeBtn = () => {
     name={"home"}
     
     >
-        <span className="relative  w-12 h-12 p-4  hover:text-accent">
+        <span className="relative  w-10 h-10 p-3  hover:text-accent">
             <Home className="w-full h-auto" strokeWidth={1.5} />
 
             <span className="absolute hidden peer-hover:block px-2 py-1 left-full mx-2 top-1/2 -translate-y-1/2 bg-background text-foreground text-sm rounded-md shadow-lg whitespace-nowrap">

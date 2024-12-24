@@ -40,7 +40,7 @@ const NavButton = ({ x, y, label, link, icon, newTab }) => {
         aria-label={label}
         name={label}
       >
-        <sapn className="relative  w-12 h-12 p-4 animate-spin-slow-reverse group-hover:pause hover:text-accent">{getIcon(icon)}
+        <sapn className="relative  w-10 h-10 p-3 animate-spin-slow-reverse group-hover:pause hover:text-accent">{getIcon(icon)}
 
         <span className="peer bg-transparent absolute top-0 left-0 w-full h-full"/>
 
