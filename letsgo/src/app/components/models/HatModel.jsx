@@ -1,11 +1,16 @@
 "use client"
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
+import { useFrame } from '@react-three/fiber';
 
 export default function HatModel(props) {
   const { nodes, materials } = useGLTF('/models/hat-transformed.glb')
+  const modelRef = useRef();
+  useFrame(() => {
+      modelRef.current.rotation.y += 0.009
+  })
   return (
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} ref={modelRef} scale={[1.8,1.8,1.8]} rotation={[0.2,-1.5,0]} position={[0,0,0]}>
       <mesh
         castShadow
         receiveShadow

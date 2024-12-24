@@ -23,6 +23,16 @@ export default function Home() {
         <HatModel/>
       </RenderModel>
       </div>
+
+      <div className="relative w-full h-screen flex flex-col items-center justify-center">
+      <div className="absolute flex flex-col items-center text-center -translate-y-1/2 top-[60%] left-1/2 -translate-x-1/2">
+        <h1 className="font-bold text-3xl text-accent">Utsav Vaghela</h1>
+        <p className="text-foreground font-light text-lg">Meet the wizard behind this mysterious Portfolio</p>
+      </div>
+      </div>
+
+
+
     </>
   );
 }
