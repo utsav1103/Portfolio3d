@@ -33,7 +33,31 @@ const AboutDetails = () => {
         4+ <sub className='font-semibold text-base'>Years of Knowledge</sub>
     </div>
     </ItemLayout>
+
+
+    <ItemLayout className={'col-span-4 !p-0'}>
+        <img className='w-full h-auto' src='https://github-readme-stats.vercel.app/api/top-langs?username=utsav1103&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&custom_title=Utsav%20Vaghela%20GitHub%20Stats' alt='Utsav Vaghela' loading='lazy' />
+    </ItemLayout>
     
+
+    <ItemLayout className={'col-span-8 !p-0'}>
+        <img className='w-full h-auto' src='https://github-readme-stats.vercel.app/api?username=utsav1103&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&custom_title=Utsav%20Vaghela%20GitHub%20Stats' alt='Utsav Vaghela' loading='lazy' />
+    </ItemLayout>
+
+
+
+
+    <ItemLayout className={'col-span-full p-2'}>
+        <img className='w-full h-auto' src='https://skillicons.dev/icons?i=js,html,css,wasm,aws,bootstrap,cloudflare,docker,git,github,linux,mongodb,mysql,vite,vscode,threejs,tailwind,redux,react,dart,flutter,python,c,androidstudio,angular,cpp,nextjs,nodejs,npm,postman,qt,svg,ubuntu' alt='Utsav Vaghela' loading='lazy' />
+    </ItemLayout>
+
+
+    <ItemLayout className={'col-span-6 !p-0'}>
+    <img className='w-full h-auto' src="https://github-readme-streak-stats.herokuapp.com?user=utsav1103&theme=dark&hide_border=true&type=png&background=EB545400&currStreakLabel=FEFE5B&ring=FEFE5B"  alt='Utsav Vaghela' loading='lazy' />
+    </ItemLayout>
+
+
+
         </div>
 
     </section>
