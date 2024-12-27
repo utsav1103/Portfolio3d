@@ -56,6 +56,12 @@ const AboutDetails = () => {
     <img className='w-full h-auto' src="https://github-readme-streak-stats.herokuapp.com?user=utsav1103&theme=dark&hide_border=true&type=png&background=EB545400&currStreakLabel=FEFE5B&ring=FEFE5B"  alt='Utsav Vaghela' loading='lazy' />
     </ItemLayout>
 
+ 
+    <ItemLayout className={'col-span-6 !p-0'}>
+        <img className='w-full h-auto' src='https://github-readme-stats.vercel.app/api/pin/?username=utsav1103&repo=Portfolio3d&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&description_lines_count=2' alt='Utsav Vaghela' loading='lazy' />
+    </ItemLayout>
+
+
 
 
         </div>
