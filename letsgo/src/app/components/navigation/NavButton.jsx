@@ -1,6 +1,7 @@
 import { Github, Home, Linkedin, NotebookText, Palette, Phone, Twitter, User, } from "lucide-react";
 import React from "react";
 import Link from "next/link";
+import ResponsiveComponent from "../ResponsiveComponent";
 
 const getIcon = (icon) => {
   switch (icon) {
@@ -29,7 +30,12 @@ const getIcon = (icon) => {
 
 const NavButton = ({ x, y, label, link, icon, newTab }) => {
   return (
-    <div
+    <ResponsiveComponent>
+
+      {
+        ({size}) => {
+          return size && size >= 480 ?
+          <div
       className="absolute cursor-pointer z-50"
       style={{ transform: `translate(${x}, ${y})` }}
     >
@@ -57,6 +63,41 @@ const NavButton = ({ x, y, label, link, icon, newTab }) => {
 
       </Link>
     </div>
+
+          :
+          <div
+      className=" w-fit cursor-pointer z-50"
+      
+    >
+      <Link
+        href={link}
+        target={newTab ? "_blank" : "_self"}
+        className="text-foreground  rounded-full flex items-center justify-center custom-bg"
+        aria-label={label}
+        name={label}
+      >
+        <sapn className="relative  w-9 h-9 xs:w-12 xs:h-12 p-2.5 xs:p-3   hover:text-accent">{getIcon(icon)}
+
+        <span className="peer bg-transparent absolute top-0 left-0 w-full h-full"/>
+
+        
+
+
+        <span className="absolute hidden peer-hover:block px-2 py-1 left-full mx-2 top-1/2 -translate-y-1/2 bg-background text-foreground text-sm rounded-md shadow-lg whitespace-nowrap">
+          {label}
+        </span>
+
+        </sapn>
+
+        
+
+      </Link>
+    </div>
+        }
+      }
+  
+
+    </ResponsiveComponent>
   );
 };
 
