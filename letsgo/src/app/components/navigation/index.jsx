@@ -50,7 +50,7 @@ const Navigation = () => {
             <div className="w-full px-2 xs:p-0 xs:w-max flex flex-col space-y-4 items-end  xs:items-center justify-center relative  group">
               {BtnList.slice(BtnList.length/2, BtnList.length).map((btn, index) => {
                 
-                return <NavButton key={btn.label} x={0} y={0} {...btn} />;
+                return <NavButton key={btn.label} x={0} y={0} {...btn} labelDirection="left" />;
               })}
             </div>
 
