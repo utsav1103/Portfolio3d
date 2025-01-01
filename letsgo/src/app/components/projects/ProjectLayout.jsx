@@ -1,8 +1,20 @@
 import React from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
+
+const item = {
+  hidden: {opacity: 0, y:100},
+  show: {opacity: 1, y:0}
+}
+//define the motion to use with link because link is a component we can't use motion.Link
+const NavLink = motion.create(Link);
+
+
 const ProjectLayout = ({ name, description, date, demoLink }) => {
   return (
-    <Link href={demoLink} target={"_blank"}
+    <NavLink
+    variants={item}
+     href={demoLink} target={"_blank"}
     className="text-sm md:text-base flex items-center justify-between w-full relative rounded-lg overflow-hidden p-4 md:p-6 custom-bg">
     
       <div className="flex items-center justify-center space-x-2">
@@ -16,7 +28,7 @@ const ProjectLayout = ({ name, description, date, demoLink }) => {
         {new Date(date).toDateString()}
         </p>
     
-    </Link>
+    </NavLink>
   );
 };
 
