@@ -1,8 +1,10 @@
-import { Github, Home, Linkedin, NotebookText, Palette, Phone, Twitter, User, } from "lucide-react";
+import { Github, Home, Linkedin, NotebookText, Palette, Phone, Scale, Twitter, User, } from "lucide-react";
 import React from "react";
 import Link from "next/link";
 import ResponsiveComponent from "../ResponsiveComponent";
 import clsx from "clsx";
+import { motion } from "framer-motion";
+
 
 const getIcon = (icon) => {
   switch (icon) {
@@ -29,6 +31,12 @@ const getIcon = (icon) => {
   }
 };
 
+const item = {
+  hidden: {scale: 0},
+  show: {scale: 1}
+}
+//define the motion to use with link because link is a component we can't use motion.Link
+const NavLink = motion.create(Link);
 const NavButton = ({ x, y, label, link, icon, newTab, labelDirection='right' }) => {
   return (
     <ResponsiveComponent>
@@ -40,7 +48,8 @@ const NavButton = ({ x, y, label, link, icon, newTab, labelDirection='right' }) 
       className="absolute cursor-pointer z-50"
       style={{ transform: `translate(${x}, ${y})` }}
     >
-      <Link
+      <NavLink
+      variants={item}
         href={link}
         target={newTab ? "_blank" : "_self"}
         className="text-foreground  rounded-full flex items-center justify-center custom-bg"
@@ -62,7 +71,7 @@ const NavButton = ({ x, y, label, link, icon, newTab, labelDirection='right' }) 
 
         
 
-      </Link>
+      </NavLink>
     </div>
 
           :
@@ -70,7 +79,8 @@ const NavButton = ({ x, y, label, link, icon, newTab, labelDirection='right' }) 
       className=" w-fit cursor-pointer z-50"
       
     >
-      <Link
+      <NavLink
+      variants={item}
         href={link}
         target={newTab ? "_blank" : "_self"}
         className="text-foreground  rounded-full flex items-center justify-center custom-bg"
@@ -92,7 +102,7 @@ const NavButton = ({ x, y, label, link, icon, newTab, labelDirection='right' }) 
 
         
 
-      </Link>
+      </NavLink>
     </div>
         }
       }
