@@ -1,11 +1,20 @@
 "use client"
+import { motion } from 'framer-motion'
 import { Home } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 
+
+const NavLink = motion.create(Link);
 const HomeBtn = () => {
   return (
-    <Link 
+    <NavLink 
+    
+    initial={{scale:0}}
+    animate={{scale:1}}
+    transition={{delay:1}}
+
+
     href={"/"}
     target={"_self"}
     className='text-foreground  rounded-full flex items-center justify-center custom-bg fixed left-4 top-4 w-fit self-start z-50'
@@ -22,7 +31,7 @@ const HomeBtn = () => {
             </span>
         </span>
 
-    </Link>
+    </NavLink>
   )
 }
 
