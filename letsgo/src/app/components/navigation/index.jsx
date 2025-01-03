@@ -46,8 +46,8 @@ const Navigation = () => {
                 const radius = isLarge
                   ? "calc(20vw - 1rem)"
                   : isMedium
-                  ? "calc(28vw - 1rem)"
-                  : "calc(36vw - 1rem)";
+                  ? "calc(22vw - 1rem)"
+                  : "calc(25vw - 1rem)";
 
                 const x = `calc(${radius} * ${Math.cos(angleRad)})`;
                 const y = `calc(${radius} * ${Math.sin(angleRad)})`;

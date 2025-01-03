@@ -18,8 +18,8 @@ export default function Staff(props) {
     <group {...props} 
     ref={modelRef}
     dispose={null}
-    scale={[3, 2.8, 3]}
-    position={[0, -1, 0]}>
+    scale={[3, 3, 3]}
+    position={[0, -2, 0]}>
         
       <mesh
         castShadow

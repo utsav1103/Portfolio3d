@@ -93,7 +93,11 @@ const Sound = () => {
     animate={{scale:1}}
     transition={{delay:1}}
 
-    className='w-10 h-10 xs:w-14 xs:h-14 text-foreground rounded-full flex items-center justify-center cursor-pointer z-50 p-2.5 xs:p-4 custom-bg'
+    className='w-8 h-8 p-2 text-foreground rounded-full flex items-center justify-center cursor-pointer z-50 custom-bg 
+        sm:w-8 sm:h-8 sm:p-2 
+        md:w-10 md:h-10 md:p-2.5 
+        lg:w-12 lg:h-12 lg:p-3 
+        xs:w-14 xs:h-14 xs:p-4'
 
     aria-label={"home"}
     name={"home"}
@@ -102,10 +106,10 @@ const Sound = () => {
         {
             isPlaying ? 
             
-            <Volume2 className="w-full h-full text-foreground group-hover:text-accent"
+            <Volume2 className="w-4 h-4 sm:w-5 sm:h-5 xs:w-6 xs:h-6 text-foreground group-hover:text-accent"
             strokWidth={1.5}/> : 
             
-            <VolumeX className="w-full h-full text-foreground group-hover:text-accent"
+            <VolumeX className="w-4 h-4 sm:w-5 sm:h-5 xs:w-6 xs:h-6 text-foreground group-hover:text-accent"
             strokWidth={1.5}/>
 
         }
