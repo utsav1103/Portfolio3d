@@ -4,15 +4,19 @@ import bg from "../../../../public/background/projects-background.png";
 import { projectsData } from "../../data";
 import ProjectList from "@/app/components/projects";
 import RenderModel from "@/app/components/RenderModel";
-import Staff from "@/app/components/models/Staff";
+// import Staff from "@/app/components/models/Staff";
+import dynamic from "next/dynamic";
 
-
+const Staff = dynamic(() => import("@/app/components/models/Staff"), {
+  ssr: false,
+});
  
 export default function Home() {
   return (
     <>
       <Image
         src={bg}
+        priority sizes="100vw"
         alt="background-image"
       
         className="-z-50 fixed top-0 left-0 w-full h-full object-cover object-center opacity-25"
