@@ -99,19 +99,19 @@ const Sound = () => {
         lg:w-12 lg:h-12 lg:p-3 
         xs:w-14 xs:h-14 xs:p-4'
 
-    aria-label={"home"}
-    name={"home"}
+    aria-label={"Sound control button"}
+    name={"Sound control button"}
     
     >
         {
             isPlaying ? 
             
-            <Volume2 className="w-4 h-4 sm:w-5 sm:h-5 xs:w-6 xs:h-6 text-foreground group-hover:text-accent"
-            strokWidth={1.5}/> : 
-            
+           ( <Volume2 className="w-4 h-4 sm:w-5 sm:h-5 xs:w-6 xs:h-6 text-foreground group-hover:text-accent"
+            strokWidth={1.5}/>) : 
+           ( 
             <VolumeX className="w-4 h-4 sm:w-5 sm:h-5 xs:w-6 xs:h-6 text-foreground group-hover:text-accent"
             strokWidth={1.5}/>
-
+)
         }
 
     </motion.button>
