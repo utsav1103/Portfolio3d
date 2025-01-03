@@ -50,23 +50,23 @@ const Sound = () => {
 
         if(consent && consentTime && new Date(consentTime).getTime() + 3*24*60*60*1000 > new Date()
     )
-            {
-            setIsPlaying(consent ==='true');
-            if(consent === 'true'){
-                ['click', 'keydown', 'touchstart'].forEach((event) => {
-                    document.addEventListener(event, handleFirstUserInteraction);
-                });
-            }else{
-                setShowModal(true);
-            }
-            
+    {
+        setIsPlaying(consent === "true");
+  
+        if (consent === "true") {
+          ["click", "keydown", "touchstart"].forEach((event) =>
+            document.addEventListener(event, handleFirstUserInteraction)
+          );
         }
-    }, [])
+      } else {
+        setShowModal(true);
+      }
+    }, []);
 
     const toggle = () =>{
         const newState = !isPlaying;
         setIsPlaying(!isPlaying);
-        !newState ? audioRef.current.play() : audioRef.current.pause();
+        newState ? audioRef.current.play() : audioRef.current.pause();
         localStorage.setItem("musicConsent", String(newState));
         localStorage.setItem("consentTime", new Date().toISOString());	
         setShowModal(false);
