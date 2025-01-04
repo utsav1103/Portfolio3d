@@ -12,15 +12,15 @@ const container = {
     show: {
       opacity: 1,
       transition: {
-        delayChildren: 0.2,
-        staggerChildren: 0.4
-      }
-    }
-}
+        delayChildren: 0.3,
+        staggerChildren: 0.2
+      },
+    },
+};
 
 const item = {
   hidden: {scale: 0},
-  show: {scale: 1}
+  show: {scale: 1},
 }
 
 export default function Form() {
@@ -40,9 +40,7 @@ export default function Form() {
       { 
         publicKey:
          process.env.NEXT_PUBLIC_PUBLIC_KEY,
-        limitRate:{
-            throttle: 5000,
-        }
+        
 
        }
     )
@@ -50,6 +48,7 @@ export default function Form() {
         toast.success('Message sent Successfully',{id:toastid});
       },
       (error) => {
+        console.error("emailjs error", error);
         toast.error('Something went wrong!',{id:toastid});
       }
     );
@@ -98,7 +97,7 @@ export default function Form() {
       variants={item}
         type="email"
         placeholder="Email"
-        {...register("Email", { required: true, pattern: /^\S+@\S+$/i })}
+        {...register("Email", { required:"This filed is required!" })}
         className="w-full p-2 rounded-md shadow-lg text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 custom-bg"
       />
 
