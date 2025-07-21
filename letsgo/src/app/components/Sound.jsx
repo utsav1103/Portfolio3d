@@ -107,10 +107,10 @@ const Sound = () => {
             isPlaying ? 
             
            ( <Volume2 className="w-4 h-4 sm:w-5 sm:h-5 xs:w-6 xs:h-6 text-foreground group-hover:text-accent"
-            strokWidth={1.5}/>) : 
+            strokeWidth={1.5}/>) : 
            ( 
             <VolumeX className="w-4 h-4 sm:w-5 sm:h-5 xs:w-6 xs:h-6 text-foreground group-hover:text-accent"
-            strokWidth={1.5}/>
+            strokeWidth={1.5}/>
 )
         }
 

@@ -49,9 +49,16 @@ const AboutDetails = () => {
     </ItemLayout>
 
 
-    <ItemLayout className={'col-span-full sm:col-span-6 !p-0'}>
-    <img className='w-full h-auto' src="https://github-readme-streak-stats.herokuapp.com?user=utsav1103&theme=dark&hide_border=true&type=png&background=EB545400&currStreakLabel=FEFE5B&ring=FEFE5B"  alt='Utsav Vaghela' loading='lazy' />
-    </ItemLayout>
+              <ItemLayout className={'col-span-full sm:col-span-6 !p-0'}>
+                  <img
+                      className="w-full h-auto"
+                      src="https://github-readme-streak-stats-xi-gilt.vercel.app?user=utsav1103&theme=transparent"
+                      alt="GitHub Streak Stats"
+                      loading="lazy"
+                  />
+                  
+              </ItemLayout>
+
 
  
     <ItemLayout className={'col-span-full sm:col-span-6 !p-0'}>
