@@ -61,10 +61,10 @@ export const projectsData = [
     },
     {
       id: 7,
-      name: "StudyBuddy",
-      description: "Collaborative learning platform",
+      name: "AI Resume Analyzer",
+      description: "Analyze your resume with AI",
       date: "2022-04-18",
-      demoLink: "https://studybuddy.example.com",
+      demoLink: "https://github.com/utsav1103/ai-resume-analyzer.git",
     },
     {
       id: 8,
