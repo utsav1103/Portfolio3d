@@ -34,12 +34,12 @@ export default function Form() {
     
     const toastid = toast.loading('Sending Message..., Please Wait...');
     emailjs.send(
-      process.env.NEXT_PUBLIC_SERVICE_ID,
-      process.env.NEXT_PUBLIC_TEMPLATE_ID,
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
       params,
       { 
         publicKey:
-         process.env.NEXT_PUBLIC_PUBLIC_KEY,
+         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
         
 
        }
