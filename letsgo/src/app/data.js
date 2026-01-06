@@ -27,7 +27,7 @@ export const projectsData = [
     id: 2,
     name: "AI Resume Analyzer",
     description: "Analyze your resume with AI",
-    date: "2022-04-18",
+    date: "2025-12-25",
     demoLink: "https://github.com/utsav1103/ai-resume-analyzer.git",
   },
     
