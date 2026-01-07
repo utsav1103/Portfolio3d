@@ -33,12 +33,12 @@ const AboutDetails = () => {
 
 
     <ItemLayout className={'col-span-full sm:col-span-4 !p-0'}>
-        <img className='w-full h-auto' src='https://github-readme-stats.vercel.app/api/top-langs?username=utsav1103&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&custom_title=Utsav%20Vaghela%20GitHub%20Stats' alt='Utsav Vaghela' loading='lazy' />
+        <img className='w-full h-auto' src='https://github-readme-stats-1xa96qtvj-utsav-vaghelas-projects.vercel.app/api?username=utsav1103&show_icons=true' alt='Utsav Vaghela' loading='lazy' />
     </ItemLayout>
     
 
     <ItemLayout className={'col-span-full sm:col-span-8 !p-0'}>
-        <img className='w-full h-auto' src='https://github-readme-stats.vercel.app/api?username=utsav1103&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&custom_title=Utsav%20Vaghela%20GitHub%20Stats' alt='Utsav Vaghela' loading='lazy' />
+        <img className='w-full h-auto' src='https://github-readme-stats-1xa96qtvj-utsav-vaghelas-projects.vercel.app/api/top-langs?username=utsav1103&layout=compact' alt='Utsav Vaghela' loading='lazy' />
     </ItemLayout>
 
 
@@ -62,7 +62,7 @@ const AboutDetails = () => {
 
  
     <ItemLayout className={'col-span-full sm:col-span-6 !p-0'}>
-        <img className='w-full h-auto' src='https://github-readme-stats.vercel.app/api/pin/?username=utsav1103&repo=Portfolio3d&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&description_lines_count=2' alt='Utsav Vaghela' loading='lazy' />
+        <img className='w-full h-auto' src='https://github-readme-stats-1xa96qtvj-utsav-vaghelas-projects.vercel.app/api/pin/?username=utsav1103&repo=Portfolio3d&theme=transparent&hide_border=true&title_color=FEFE5B&text_color=FFFFFF&icon_color=FEFE5B&text_bold=false&description_lines_count=2' alt='Utsav Vaghela' loading='lazy' />
     </ItemLayout>
 
 
