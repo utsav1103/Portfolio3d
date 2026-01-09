@@ -31,9 +31,32 @@ export default function Home() {
       </div>
 
       <div className="relative w-full h-screen flex flex-col items-center justify-center">
-      <div className="absolute flex flex-col items-center text-center -translate-y-1/2 top-[62%] sm:top-[50%] left-1/2 -translate-x-1/2">
-        <h1 className="font-bold text-2xl xs:text-4xl sm:text-7xllg:text-9xl text-accent">Utsav Vaghela</h1>
-        <p className="text-foreground font-light text-lg">Meet the wizard behind this mysterious Portfolio</p>
+      <div className="absolute flex flex-col items-center text-center 
+  top-[70%] sm:top-[55%] left-1/2 -translate-x-1/2">
+        <h1
+  className="
+    font-extrabold tracking-[0.15em]
+    text-3xl xs:text-5xl sm:text-7xl lg:text-8xl
+    text-accent
+    drop-shadow-[0_0_25px_rgba(254,254,91,0.25)]
+  "
+>
+  UTSAV VAGHELA
+</h1>
+
+<p
+  className="
+    mt-4
+    text-foreground/80
+    font-light
+    tracking-widest
+    text-sm sm:text-base
+    uppercase
+  "
+>
+  Meet the wizard behind the mysterious portfolio
+</p>
+
       </div>
       </div>
 
