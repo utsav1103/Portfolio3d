@@ -32,17 +32,17 @@ export const projectsData = [
   },
     
     {
-    id: 3,
+    id: 4,
     name: "3D Portfolio",
     description: "Amazing 3d portfolio with Magical theme",
     date: "2025-01-04",
     demoLink: "https://github.com/utsav1103/Portfolio3d.git",
   },
    {
-    id: 4,
+    id: 3,
     name: "SELLIFY",
     description: "Sell your products...",
-    date: "2022-11-05",
+    date: "2026-01-31",
     demoLink: "https://github.com/utsav1103/SELLIFY.git",
   },
   
