@@ -6,6 +6,11 @@ import { useForm } from "react-hook-form";
 import { toast, Toaster } from "sonner";
 
 
+/*  EMAILJS INIT – RUNS ONCE */
+if (typeof window !== "undefined") {
+  emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
+}
+
 const container = {
   hidden: {
     opacity: 0},
@@ -37,12 +42,6 @@ export default function Form() {
       process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
       process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
       params,
-      { 
-        publicKey:
-         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
-        
-
-       }
     )
       .then(() => {
         toast.success('Message sent Successfully',{id:toastid});
