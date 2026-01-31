@@ -38,13 +38,14 @@ export const projectsData = [
     date: "2025-01-04",
     demoLink: "https://github.com/utsav1103/Portfolio3d.git",
   },
-  {
+   {
     id: 4,
-    name: "Favorite places app",
-    description: "Visit your fav places and take a view online",
-    date: "2023-09-25",
-    demoLink: "https://github.com/utsav1103/favorite_places_app.git",
+    name: "SELLIFY",
+    description: "Tech news aggregator",
+    date: "2022-11-05",
+    demoLink: "https://github.com/utsav1103/SELLIFY.git",
   },
+  
   {
     id: 5,
     name: "Chat app",
@@ -65,27 +66,15 @@ export const projectsData = [
     date: "2025-03-25",
     demoLink: "https://github.com/utsav1103/AI_writing_assistant.git",
   },
+ 
   {
     id: 8,
-    name: "TechTalk",
-    description: "Tech news aggregator",
-    date: "2022-11-05",
-    demoLink: "https://techtalk.example.com",
+    name: "Favorite places app",
+    description: "Visit your fav places and take a view online",
+    date: "2023-09-25",
+    demoLink: "https://github.com/utsav1103/favorite_places_app.git",
   },
-  {
-    id: 9,
-    name: "FitTrack",
-    description: "Fitness and workout tracker",
-    date: "2022-03-22",
-    demoLink: "https://fittrack.example.com",
-  },
-  {
-    id: 10,
-    name: "MindfulMoments",
-    description: "Meditation and mindfulness app",
-    date: "2022-02-14",
-    demoLink: "https://mindfulmoments.example.com",
-  },
+  
 ];
 
 export const BtnList = [
