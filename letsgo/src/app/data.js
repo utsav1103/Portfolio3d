@@ -41,7 +41,7 @@ export const projectsData = [
    {
     id: 4,
     name: "SELLIFY",
-    description: "Tech news aggregator",
+    description: "Sell your products...",
     date: "2022-11-05",
     demoLink: "https://github.com/utsav1103/SELLIFY.git",
   },
