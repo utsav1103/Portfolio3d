@@ -102,7 +102,7 @@ export const BtnList = [
   },
   {
     label: "Resume",
-    link: "",
+    link: "https://drive.google.com/file/d/1zFcLjAzoy0seZnv2diQzLbcvWP1eNYfJ/view?usp=drivesdk",
     icon: "resume",
     newTab: true,
   },
